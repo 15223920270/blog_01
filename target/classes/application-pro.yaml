@@ -1,0 +1,25 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://rm-bp1h243659h180ri6ko.mysql.rds.aliyuncs.com:3306/a_blog
+    username: user
+    password: '@zhb226122'
+
+logging:
+  level:
+    root: warn
+    com.star: info
+  file: log/blog-pro.log
+
+mybatis:
+  type-aliases-package: com.zhang.pojo
+  mapper-locations: classpath:mapper/*.xml
+  configuration:
+    map-underscore-to-camel-case: true
+
+
+
+
+
+
+
